@@ -1,0 +1,261 @@
+
+*{
+ font-family: 'Poppins', sans-serif;
+ box-sizing: border-box;
+}
+
+body{
+    background: rgb(254,105,96);
+background: linear-gradient(90deg, , #ebbc58 100%,#d53369 0%);
+height: 550px;
+margin-top: 85px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: center;
+    margin-top: 75px;
+    height: 530px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 1335px;
+
+
+    }
+    .single{
+        margin-left: 37px;
+        width: 317px;
+        text-align: center;
+        margin-bottom: 15px;
+
+    }
+    .premium{
+        width: 80%;
+        text-align: center;
+    }
+    .ulimate{
+        width: 317px;
+    margin-right: 17px;
+
+    }
+
+}
+.title{
+    
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+
+}
+.title2{
+ color: black;
+ font-size: 15px;
+ font-weight: 500;
+ text-align: center;
+ letter-spacing: -1px;
+ padding-bottom: 30px;
+ 
+
+}
+
+.price{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+.price span{
+    font-size: 15px;
+}
+.cart{
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+.cart button{
+    color: #fff;
+    font-size: 17px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 15px;
+    padding-top:15px;
+    border-radius: 30px;
+    border: none;
+    
+}
+.cart button:hover{
+    border-radius:10px;
+    cursor: pointer;
+}
+.renew{
+    color: darkgray;
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.desc{
+    color: rgb(61, 58, 58);
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 25px;
+
+}
+li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5px;
+    line-height: 30px;
+}
+.single{
+  background-color: #fff;
+  margin-right: 30px;
+  height: 500px;
+  margin-top: 17px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1;
+
+}
+
+.single .title{
+    padding-top: 25px;
+    padding-bottom: 5px;
+    color: #fe0000;
+
+}
+.single .title2::selection{
+    color: #c40404;
+}
+
+.single .price{
+    color: #fe0000;
+
+}
+.single .cart button{
+    background-color:#fe0000 ;
+}
+.single .desc li:hover{
+    color: #fe0000;
+
+}
+.single .features:hover{
+    color: #fe0000;
+
+}
+
+.premium{
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    margin-left: 11px;
+    width: 320px;
+
+}
+
+.premium .title{
+    padding-top: 25px;
+    padding-bottom: 5px;
+    color: #bb24f2;
+
+
+}
+.premium .title span{
+    background-color: #bb24f2;
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    left: -51px;
+    padding: 16px 40px;
+    transform: rotate(-45deg);
+    font-size: 17px;
+    font-weight: 500;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.premium .title span::before{
+    content: " ";
+    position: absolute;
+
+
+}
+.premium .title2{
+    padding-top: 10px;
+   padding-bottom: 35px;
+}
+.premium .title2::selection{
+    color: #8c1cb4;
+}
+
+.premium .price{
+    color: #bb24f2;
+
+}
+.premium .cart button{
+    background-color:#bb24f2 ;
+}
+.premium .desc li:hover{
+    color: #bb24f2;
+
+}
+.premium .features:hover{
+    color: #bb24f2;
+}
+.ulimate{
+    background-color: #fff;
+    margin-left: 30px;
+    height: 500px;
+    margin-top: 17px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.ulimate .title{
+    padding-top: 25px;
+    padding-bottom: 5px;
+    color: #f5b55b;
+
+}
+.ulimate .title2::selection{
+    color: #f5b55b;
+}
+
+.ulimate .price{
+    color: #f5b55b;
+
+}
+.ulimate .cart button{
+    background-color:#f5b55b ;
+}
+.ulimate .desc li:hover{
+    color:#f5b55b;
+}
+.ulimate .features:hover{
+    color:#f5b55b;
+}
+
+.features{
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding-top: 11px;
+}
+
+.r-icon{
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+}
+.f-icon{
+font-size: 20px;
+color: red;
+font-weight: bold;
+}
